@@ -3,6 +3,13 @@
 
 ## OSM 
 
+OpenStreetMap Gazetteer generation code 
+
     osm/
 
+## clavin-server 
+
+Experimental CLAVIN Scala server 
+
+    clavin-server/
 
