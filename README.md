@@ -13,3 +13,7 @@ Experimental CLAVIN Scala server
 
     clavin-server/
 
+
+## JIFX Experimentation at Camp Roberts 
+
+    jifx/
