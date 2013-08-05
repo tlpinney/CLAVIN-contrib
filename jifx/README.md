@@ -15,8 +15,9 @@ Get python script at https://gist.github.com/brendano/22764
 Other option is to use LibreOffice and export as CSV using tab as a delimeter
 
 
-## R-Studio 
+## Analysis
 
+Install R-Studio
 Install ggplot2 package 
 
 Load data 
@@ -33,6 +34,9 @@ Create bar chart of language counts
     ggplot(data=tweets, aes(x=Language)) + geom_bar(stat="bin") + ggtitle("JIFX - Twitter Language Counts")
 
 
+Generated Plot 
+
+https://raw.github.com/Berico-Technologies/CLAVIN-contrib/master/jifx/jifx_twitter_language_counts.png
 
 
 
