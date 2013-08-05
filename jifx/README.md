@@ -7,13 +7,18 @@
 Get access to twitter data
 
 Conversion to TSV 
-
-Get python script at https://gist.github.com/brendano/22764
-
-    python xlsx2tsv.py JIFX_tweets.xlsx > JIFX_tweets.tsv
    
-Other option is to use LibreOffice and export as CSV using tab as a delimeter
+Use LibreOffice and export as CSV using tab as a delimeter, and no formatting for text.
 
+Generate unique ids for datasets
+
+    python make_geo_ids.py > GeocodedTweets_id.tsv
+	python make_tweet_ids.py > JIFX_tweets_id.tsv
+
+Create a combined dataset
+
+	make_combined.py
+	
 
 ## Analysis
 
@@ -22,11 +27,7 @@ Install ggplot2 package
 
 Load data 
 
-    tweets <- read.delim("~/Downloads/JIFX_tweets.tsv")
-
-Fix up misspelled column
-
-    names(tweets)[names(tweets)=="Langauge"] <- "Language"
+    tweets <- read.delim("JIFX_tweets_id.tsv")
 
 
 Create bar chart of language counts 
@@ -37,6 +38,10 @@ Create bar chart of language counts
 Generated Plot 
 
 https://raw.github.com/Berico-Technologies/CLAVIN-contrib/master/jifx/jifx_twitter_language_counts.png
+
+
+
+
 
 
 
