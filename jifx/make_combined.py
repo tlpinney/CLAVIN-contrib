@@ -65,8 +65,7 @@ print "tid\tuser\tuserid\tlanguage\tunknown1\tunknown2\ttweet\tgeocoded\tlat\tlo
 c = 0
 for k in d2.keys():
     if k in d:
-        print d2[k][0] + "\t" + d[k][1] + "\t" + d[k][2] + "\t" + d[k][3] + "\t" + d2[k][1] + "\t" + d2[k][2] + \
-              d2[k][3] + "\t" + d2[k][4] + "\t" + d2[k][5] + "\t" + d2[k][6] + "\t" + d2[k][7] + "\t" + d2[k][8]
+        print d2[k][0] + "\t" + d[k][1] + "\t" + d[k][2] + "\t" + d[k][3] + "\t" + d2[k][1] + "\t" + d2[k][2] + "\t" + d2[k][4] + "\t" + d2[k][5] + "\t" + d2[k][6] + "\t" + d2[k][7] + "\t" + d2[k][8]
 
 #print c
 
