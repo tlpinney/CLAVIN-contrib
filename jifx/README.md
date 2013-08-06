@@ -40,8 +40,11 @@ Generated Plot
 https://raw.github.com/Berico-Technologies/CLAVIN-contrib/master/jifx/jifx_twitter_language_counts.png
 
 
+Create bar chart for combined language counts.
 
-
+	library(scales)
+	ggplot(data=ctweets, aes(x=language)) + geom_bar(stat="bin") + ggtitle("JIFX - Combined Twitter Language Counts") + scale_y_continuous(labels = comma)
+	
 
 
 
