@@ -2,7 +2,7 @@
     "type": "Feature",
     "geometry": {  
         "type": "Point",
-        "coordinates": [122.0828, 37.3861]
+        "coordinates": [37.4139, -122.0813]
     },
     "properties": {
         "src-ip" : "10.8.30.56",
