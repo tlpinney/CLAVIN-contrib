@@ -11,7 +11,7 @@
         "path" : "/clavin-web/",
         "code" : "200",
         "bytes" :  "5329",              
-        "marker-color" : "green"            
+        "marker-color" : "#00FF00"            
      }
 }
 
