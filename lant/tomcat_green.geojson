@@ -10,7 +10,7 @@
         "action" : "GET",
         "path" : "/clavin-web/",
         "code" : "200",
-        "bytes" :  "5329"               
+        "bytes" :  "5329",              
         "marker-color" : "green"            
      }
 }
