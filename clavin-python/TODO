@@ -6,7 +6,7 @@ from clavin import Clavin
 # different protocol versions
 
 # connect with no auth, non-ssl, using the default REST API 
-clv = Clavin.connect("http://localhost:9000") 
+clv = Clavin("http://localhost:9000") 
 
 
 # parse  
