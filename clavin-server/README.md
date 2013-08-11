@@ -8,9 +8,24 @@ Play framework
 
 http://www.playframework.com/
 
+CLAVIN 0.3.4 - https://github.com/Berico-Technologies/CLAVIN/tree/release/0.3.4
+
+    git clone https://github.com/Berico-Technologies/CLAVIN.git
+    cd CLAVIN
+    git checkout 0.3.4 
+    curl http://download.geonames.org/export/dump/allCountries.zip -o allCountries.zip
+    unzip allCountries.zip 
+    mvn compile
+    # build the index  
+    MAVEN_OPTS="-Xmx2048M" mvn exec:java -Dexec.mainClass="com.berico.clavin.index.IndexDirectoryBuilder"
+    mvn package 
+        
 
 
 ## Point to the correct index directory
+  
+    git clone https://github.com/Berico-Technologies/CLAVIN-contrib
+    cd CLAVIN-contrib/clavin-server 
 
 Edit conf/application.conf and put in the correct index path 
 
@@ -28,6 +43,11 @@ Sample document of the wikipedia Yak article
     curl -H"Content-Type:text/plain" -d@document.txt http://localhost:9000
 
 This will return JSON of the resolved locations 
+
+
+## Experimental Python REST API 
+ 
+    CLAVIN-contrib/clavin-server 
 
 
 ## Known issues 
