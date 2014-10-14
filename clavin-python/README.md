@@ -9,7 +9,7 @@ pip install -r requirements.txt
     from clavin import Clavin
     
     # connect to CLAVIN REST service  
-    clv = Clavin("http://localhost:9000")
+    clv = Clavin("http://localhost:9090/api/v0/geotag")
 
     # resolve locations in document and output results to stdout
     doc = open("document.txt","r").read()    
